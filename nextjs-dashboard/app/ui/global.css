@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: rgba(0,170,162);
+  --secondary-background: linear-gradient(to right, rgba(71,94,108,1)  , rgba(20,27,31,1));
+}
+
+body{
+  color: rgba(41,52,57,1);
+}
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
@@ -15,4 +23,21 @@ input[type='number']::-webkit-inner-spin-button {
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-image: var(--secondary-background);
+}
+
+.header span {
+  flex-direction: row;
+}
+
+.header h1 {
+  font-size: 7rem;
+  color: #fff;
 }
