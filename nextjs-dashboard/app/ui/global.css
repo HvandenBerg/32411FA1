@@ -41,3 +41,8 @@ input[type='number']::-webkit-outer-spin-button {
   font-size: 7rem;
   color: #fff;
 }
+
+img,
+video {
+  height: 100%;
+}
